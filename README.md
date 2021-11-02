@@ -65,9 +65,20 @@ Verify that the row is inserted using the SELECT command:
 mysql> SELECT * FROM bil_359_omer_altuntas;
 ```
 
+![select](https://user-images.githubusercontent.com/54469544/139911237-926bd59b-c7a8-4d69-921b-2220ba6523a9.png)
+
+
 Now Insert many row:
 
 ```
 mysql> INSERT INTO bil_359_omer_altuntas(name, age) VALUES ("muhammed basoglu", 20), ("ayse yilmaz", 29), ("sezen aksu", 50);
+```
+
+![insertMany](https://user-images.githubusercontent.com/54469544/139911191-df01591a-a9cb-4f54-bef3-0628142c2d8f.png)
+
+Type it again:
+
+```
+mysql> SELECT * FROM bil_359_omer_altuntas;
 ```
 
