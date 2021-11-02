@@ -38,7 +38,8 @@ mysql> CREATE TABLE bil_359_omeraltuntas(id INT NOT NULL AUTO_INCREMENT, name VA
 
 ```
 
-![createtable](https://user-images.githubusercontent.com/54469544/139900876-44d8c5cd-5b15-4315-adb2-425fe41f4581.png)
+
+![createtable](https://user-images.githubusercontent.com/54469544/139907188-ad946eac-0955-4a1a-9826-8b2f356c3b2e.png)
 
 
 Verify that the table is created using the DESCRIBE command:
@@ -46,11 +47,27 @@ Verify that the table is created using the DESCRIBE command:
 mysql> DESCRIBE bil_359_omeraltuntas;
 ```
 
-![describe](https://user-images.githubusercontent.com/54469544/139904272-94e9a47e-2ba8-4d50-90a4-abdae034001f.png)
+![describe](https://user-images.githubusercontent.com/54469544/139907142-2d753cdd-1359-45d1-b0a9-482c0474e2e8.png)
 
 # Insert Rows to Table
 
+Insert row to table:
+
 ```
 mysql> INSERT INTO bil_359_omeraltuntas(name, age) VALUES("omer altuntas", 20);
+```
+
+![insert](https://user-images.githubusercontent.com/54469544/139907227-7944862e-c8a9-4e2e-b23a-529c5ef1ce55.png)
+
+Verify that the row is inserted using the SELECT command:
+
+```
+mysql> SELECT * FROM bil_359_omer_altuntas;
+```
+
+Now Insert many row:
+
+```
+mysql> INSERT INTO bil_359_omer_altuntas(name, age) VALUES ("muhammed basoglu", 20), ("ayse yilmaz", 29), ("sezen aksu", 50);
 ```
 
