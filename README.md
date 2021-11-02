@@ -21,7 +21,7 @@ mysql> CREATE DATABASE BIL_359;
 Firstly select a Database
 
 ```
-mysql> USE BIL_359
+mysql> USE BIL_359;
 ```
 
 ![usedb](https://user-images.githubusercontent.com/54469544/139894532-ed600009-ab73-428b-b0d3-577a4189b6aa.png)
@@ -34,16 +34,23 @@ age is int.
 
 
 ```
-mysql> CREATE TABLE bil_359_omer_altuntas(id INT NOT NULL, name VARCHAR(50) NOT NULL, age INT NOT NULL, PRIMARY KEY(id));
+mysql> CREATE TABLE bil_359_omeraltuntas(id INT NOT NULL AUTO_INCREMENT, name VARCHAR(50) NOT NULL, age INT NOT NULL, PRIMARY KEY(id));
 
 ```
 
 ![createtable](https://user-images.githubusercontent.com/54469544/139900876-44d8c5cd-5b15-4315-adb2-425fe41f4581.png)
 
-# Insert Rows to Table
 
 Verify that the table is created using the DESCRIBE command:
 ```
-mysql> DESCRIBE bil_359_omer_altuntas
+mysql> DESCRIBE bil_359_omeraltuntas;
+```
+
+![describe](https://user-images.githubusercontent.com/54469544/139904272-94e9a47e-2ba8-4d50-90a4-abdae034001f.png)
+
+# Insert Rows to Table
+
+```
+mysql> INSERT INTO bil_359_omeraltuntas(name, age) VALUES("omer altuntas", 20);
 ```
 
