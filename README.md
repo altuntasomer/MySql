@@ -82,3 +82,55 @@ Type it again:
 mysql> SELECT * FROM bil_359_omer_altuntas;
 ```
 
+![select2](https://user-images.githubusercontent.com/54469544/139911956-593c1022-68a0-4f65-ac86-3e92df215fe1.png)
+
+# Backup Single Table
+
+Logout from MySql
+
+```
+mysql> exit;
+```
+
+Type it to backup single table
+
+```
+$ sudo mysqldump BIL_359 bil_359_omer_altuntas > bil_359_omer_altuntas.sql
+```
+
+Now Create different Database:
+
+```
+$ sudo mysql -u root
+```
+
+```
+mysql> CREATE DATABASE BIL_359_BACKUP;
+```
+
+And logout:
+
+```
+mysql> exit;
+```
+
+Type this to restore table:
+
+```
+$ sudo mysql -u root BIL_359_BACKUP < bil_359_omer_altuntas.sql
+
+```
+
+Check.
+
+```
+$ sudo mysql -u root
+```
+
+```
+mysql> USE BIL_359_BACKUP;
+```
+
+```
+mysql> SELECT * FROM bil_359_omer_altuntas;
+```
