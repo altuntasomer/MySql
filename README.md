@@ -92,11 +92,17 @@ Logout from MySql
 mysql> exit;
 ```
 
+![exit](https://user-images.githubusercontent.com/54469544/139915872-c9504c26-7d78-442f-8dd8-46cf4bb824c4.png)
+
+
 Type it to backup single table
 
 ```
 $ sudo mysqldump BIL_359 bil_359_omer_altuntas > bil_359_omer_altuntas.sql
 ```
+
+![backup](https://user-images.githubusercontent.com/54469544/139915813-56ccc8d2-0278-4e8e-b361-df2718854d7e.png)
+
 
 Now Create different Database:
 
@@ -107,6 +113,9 @@ $ sudo mysql -u root
 ```
 mysql> CREATE DATABASE BIL_359_BACKUP;
 ```
+
+![createnewdb](https://user-images.githubusercontent.com/54469544/139915844-d35c445e-ea23-4596-b3f0-c858d9f2dff6.png)
+
 
 And logout:
 
@@ -121,6 +130,11 @@ $ sudo mysql -u root BIL_359_BACKUP < bil_359_omer_altuntas.sql
 
 ```
 
+
+![restore](https://user-images.githubusercontent.com/54469544/139915886-b47a479d-7e07-442e-a4b9-38cf7f30248a.png)
+
+
+
 Check.
 
 ```
@@ -134,3 +148,5 @@ mysql> USE BIL_359_BACKUP;
 ```
 mysql> SELECT * FROM bil_359_omer_altuntas;
 ```
+
+![check](https://user-images.githubusercontent.com/54469544/139915825-cd41c563-ce82-4555-a82b-56e20cea581e.png)
