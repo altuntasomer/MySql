@@ -37,3 +37,13 @@ age is int.
 mysql> CREATE TABLE bil_359_omer_altuntas(id INT NOT NULL, name VARCHAR(50) NOT NULL, age INT NOT NULL, PRIMARY KEY(id));
 
 ```
+
+![createtable](https://user-images.githubusercontent.com/54469544/139900876-44d8c5cd-5b15-4315-adb2-425fe41f4581.png)
+
+# Insert Rows to Table
+
+Verify that the table is created using the DESCRIBE command:
+```
+mysql> DESCRIBE bil_359_omer_altuntas
+```
+
